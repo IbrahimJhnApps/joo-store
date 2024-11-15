@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:joo_store/utils/theme/custom_themes/custom_theme.dart';
+
+import 'package:joo_store/utils/theme/custom_themes/appbar_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/button_sheet_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/checkbox_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/chip_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/outline_button_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/text_field_theme.dart';
+import 'package:joo_store/utils/theme/custom_themes/text_theme.dart';
 import 'package:joo_store/utils/theme/custom_themes/elevated_button_theme.dart';
 
 class AppTheme {
@@ -8,12 +15,18 @@ class AppTheme {
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
-    brightness: Brightness.light,
     fontFamily: 'Poppins',
-    scaffoldBackgroundColor: Colors.white,
+    brightness: Brightness.light,
     primaryColor: Colors.blue,
     textTheme: JTextTheme.lightTextTheme,
+    chipTheme: JChipTheme.lightChipTheme,
+    scaffoldBackgroundColor: Colors.white,
+    appBarTheme: JAppBarTheme.lightAppBarTheme,
+    checkboxTheme: JCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: JBottomSheetTheme.lightButtonSheetTheme,
     elevatedButtonTheme: JElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: JOutlineButtonTheme.lightOutlineButtonTheme,
+    inputDecorationTheme: JTextFormFieldTheme.lightInputDecorationTheme,
   );
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
@@ -22,6 +35,12 @@ class AppTheme {
     scaffoldBackgroundColor: Colors.black,
     primaryColor: Colors.blue,
     textTheme: JTextTheme.darkTextTheme,
-    elevatedButtonTheme: JElevatedButtonTheme.lightElevatedButtonTheme,
+    chipTheme: JChipTheme.darkChipTheme,
+    appBarTheme: JAppBarTheme.darkAppBarTheme,
+    checkboxTheme: JCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: JBottomSheetTheme.darkButtonSheetTheme,
+    elevatedButtonTheme: JElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: JOutlineButtonTheme.darkOutlineButtonTheme,
+    inputDecorationTheme: JTextFormFieldTheme.darkInputDecorationTheme,
   );
 }
